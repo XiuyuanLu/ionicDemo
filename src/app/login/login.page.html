@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item>
+    <ion-label>username:</ion-label>
+    <ion-input placeholder="username" #username></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>password:</ion-label>
+    <ion-input type="password" placeholder="password" #password></ion-input>
+  </ion-item>
+
+  <ion-button color="primary" (click)="login(username, password)">login</ion-button>
+
+</ion-content>
